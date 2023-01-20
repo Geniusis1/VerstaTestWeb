@@ -1,0 +1,23 @@
+﻿@model IEnumerable<VerstaTestWeb.Models.Order>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Просмотр таблицы</title>
+	<link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/style.css")" />
+</head>
+<body>
+	@foreach(var item in Model)
+	{
+		<details>
+			<summary>Заказ №@item.id</summary>
+			<p>Город отправления: @item.sender_city</p>
+			<p>Адрес отправления: @item.sender_country</p>
+			<p>Город получателя: @item.recipient_city</p>
+			<p>Адрес получателя: @item.recipient_country</p>
+			<p>Вес груза: @item.cargo_weight</p>
+			<p>Дата забора груза: @item.pickupDate</p>
+		</details>
+	}
+</body>
+</html>

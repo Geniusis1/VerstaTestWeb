@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "osT38Zem9w1CuXZDAr0cJumzH4cybkYHBZZhaIiKQLc=",
+  "Source": "VerstaTestWeb",
+  "BasePath": "_content/VerstaTestWeb",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "VerstaTestWeb\\wwwroot",
+      "Source": "VerstaTestWeb",
+      "ContentRoot": "D:\\Projects\\Visual\\VerstaTestWeb\\wwwroot\\",
+      "BasePath": "_content/VerstaTestWeb",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

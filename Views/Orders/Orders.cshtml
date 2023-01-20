@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Http.Extensions
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Создание заказа</title>
+	<link type="text/css" rel="stylesheet" href="@Url.Content("~/Content/style.css")" />
+</head>
+<body>
+	<form action="@{new String(Context.Request.GetDisplayUrl() + "/save");}" method="get">
+		<input name="sender_city" type="text" placeholder="Sender city" required aria-required="true">
+		<input name="sender_country" type="text" placeholder="Sender country" required aria-required="true">
+		<input name="recipient_city" type="text" placeholder="Recipient city" required aria-required="true">
+		<input name="recipient_country" type="text" placeholder="Recipient country" required aria-required="true">
+		<input name="cargo_weight" type="number" placeholder="Cargo weight" required aria-required="true">
+		<input name="pickupDate" asp-for="DateTime" placeholder="Pickup date" required aria-required="true">
+		<input type="submit" class="submit" value="Create order">
+	</form>
+</body>
+</html>
